@@ -32,7 +32,7 @@ class ProductManager {
         if (productFound) {
             return productFound && console.log(`Se encontro el producto ${productFound.title}`)
         } else {
-            return console.log("notFoud")
+            console.log("notFoud")
         }
     }
 
