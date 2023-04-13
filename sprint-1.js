@@ -29,8 +29,11 @@ class ProductManager {
 
         const productFound = this.products.find((p => p.id === id))
 
-        productFound ? console.log(productFound) : console.error("Notfound")
-
+        if (productFound) {
+            return productFound && console.log(`Se encontro el producto ${productFound.title}`)
+        } else {
+            return console.log("notFoud")
+        }
     }
 
 }
